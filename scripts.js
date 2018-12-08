@@ -7,12 +7,10 @@ const myfunction = () => {
 	css.textContent = "linear-gradient(to right, rgb(0, 255, 0), rgb(255, 0, 0));";
 }
 
-
 const setGradient = () => {
 	body.style.background = "linear-gradient(to right, " + color1.value + "," + color2.value + ")";
 	css.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", setGradient)
-
 color2.addEventListener("input", setGradient)
